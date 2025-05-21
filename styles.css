@@ -1,0 +1,142 @@
+body {
+  background-color: white;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #000b;
+  margin: 70px;
+}
+
+h1, h2, h3 {
+  text-align: center;
+}
+
+h1 {
+  font-weight: lighter;
+  font-size: 25px;
+}
+
+h2 {
+  font-size: 26px;
+}
+
+h3 {
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+h4 {
+  font-size: 15px;
+}
+
+p {
+  font-size: 11px;
+}
+
+.color-boxes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(8, auto);
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 30px;
+  align-self: center;
+  justify-self: center;
+  margin-top: 50px;
+  max-width: 1000px;
+  box-sizing: border-box;
+}
+
+.red-box {
+  background-color: white;
+  box-shadow: 0 0 10px 0 #d5d5d5;
+  border-top: 4px solid red;
+  border-radius: 7px;
+  grid-column: 2;
+  grid-row: 1 / 4;
+  padding: 20px;
+  padding-top: 0;
+  display: grid;
+}
+
+.green-box {
+  background-color: white;
+  box-shadow: 0 0 10px 0 #d5d5d5;
+  border-top: 4px solid green;
+  border-radius: 7px;
+  grid-column: 1;
+  grid-row: 2 / 6;
+  padding: 20px;
+  padding-top: 0;
+  display: grid;
+}
+
+.blue-box {
+  background-color: white;
+  box-shadow: 0 0 10px 0 #d5d5d5;
+  border-top: 4px solid blue;
+  border-radius: 7px;
+  grid-column: 3;
+  grid-row: 2 / 6;
+  padding: 20px;
+  padding-top: 0;
+  display: grid;
+}
+
+.yellow-box {
+  background-color: white;
+  box-shadow: 0 0 10px 0 #d5d5d5;
+  border-top: 4px solid yellow;
+  border-radius: 7px;
+  grid-column: 2;
+  grid-row: 4 / 8;
+  padding: 20px;
+  padding-top: 0;
+  display: grid;
+}
+
+img {
+  width: 40px;
+  justify-self: end;
+}
+
+.attribution { 
+  font-size: 11px; 
+  text-align: center; 
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
+
+
+@media screen and (max-width: 768px) {
+  .color-boxes {
+    grid-template-columns: 1fr;
+  }
+
+  .red-box,
+  .green-box,
+  .blue-box,
+  .yellow-box {
+    grid-column: auto;
+    grid-row: auto;
+    justify-self: center;
+  }
+
+}
+
+.red-box:hover {
+  box-shadow: 0 0 10px 0 #979797;
+}
+
+.green-box:hover {
+  box-shadow: 0 0 10px 0 #979797;
+}
+
+.blue-box:hover {
+  box-shadow: 0 0 10px 0 #979797;
+}
+
+.yellow-box:hover {
+  box-shadow: 0 0 10px 0 #979797;
+}
