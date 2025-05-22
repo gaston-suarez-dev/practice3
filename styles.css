@@ -97,6 +97,7 @@ p {
 img {
   width: 40px;
   justify-self: end;
+  animation: animate-img 0.5s alternate infinite;
 }
 
 .attribution { 
@@ -140,3 +141,14 @@ img {
 .yellow-box:hover {
   box-shadow: 0 0 10px 0 #979797;
 }
+
+@keyframes animate-img {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.04);
+  }
+}
+
